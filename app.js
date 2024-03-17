@@ -84,11 +84,19 @@ document.getElementById("q1-ottawa").addEventListener("click", ()=>{
     }, 4000);
     timeLeft = 4;
 });
+document.getElementById("q2-two").addEventListener("click", ()=>{
+    document.getElementById("q2-two").classList.add("incorrect");
+    setTimeout(()=>{
+        window.location.hash = "#question-3";
+        document.getElementById("q2-two").classList.remove("incorrect");
+    }, 4000);
+    timeLeft = 4;
+});
 
 window.onhashchange = ()=>{
     var hash = window.location.hash;
 
-    if(hash == "#home"){
+    if(hash == "#home"){o
         timeLeft = 0;
         document.getElementById("home").classList.remove("hidden");
         document.getElementById("tutorial").classList.add("hidden");
