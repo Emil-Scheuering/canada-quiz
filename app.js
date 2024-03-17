@@ -127,4 +127,11 @@ window.onhashchange = ()=>{
 
         document.getElementById("q-description").innerHTML = "Question 2";
     }
+    if(hash == "#question-3"){
+        timeLeft = 21;
+        document.getElementById("question-2").classList.add("hidden");
+        document.getElementById("question-3").classList.remove("hidden");
+
+        document.getElementById("q-description").innerHTML = "Question 3";
+    }
 };
