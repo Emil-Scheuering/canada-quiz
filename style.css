@@ -123,6 +123,7 @@ p{font-size: x-large;}
 #question-2.hidden,
 #question-3.hidden,
 #question-4.hidden,
-#question-5.hidden{
+#question-5.hidden,
+#finished.hidden{
     display: none;
 }
