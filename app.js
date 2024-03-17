@@ -96,7 +96,7 @@ document.getElementById("q2-two").addEventListener("click", ()=>{
 window.onhashchange = ()=>{
     var hash = window.location.hash;
 
-    if(hash == "#home"){o
+    if(hash == "#home"){
         timeLeft = 0;
         document.getElementById("home").classList.remove("hidden");
         document.getElementById("tutorial").classList.add("hidden");
