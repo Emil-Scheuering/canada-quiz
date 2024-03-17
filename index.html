@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canada Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <a href="https://github.com/emil-scheuering/canada-quiz" target="_blank">
+        <img class="bottom-button" src="img/github.png" style="right: 20px;" title="Visit Github Repo">
+    </a>
+
+    <h2 id="q-description">Let's start</h2>
+
+    <div id="home" class="hidden">
+        <h0>Who are you?</h0><br><br>
+        <div class="row">
+            <button id="home-teacher">
+                <img src="img/class.jpg"> I am a teacher playing with my class
+            </button>
+        </div>
+        <div class="row">
+            <button id="home-student">
+                <img src="img/student.jpg"> I am a student playing alone
+            </button>
+        </div><br><br>
+        <div class="row">
+            <button id="home-skip">
+                <img src="img/exit.jpg"> Skip tutorial
+            </button>
+        </div>
+    </div>
+    <div id="tutorial" class="hidden">
+        <h0>How to play</h0>
+        <p id="teacher-play">
+            <u>If you're a teacher playing with your class:</u>
+            Your class has to vote on which answer to choose.<br>
+            If everyone agrees, you have to click on the selected answer.
+        </p><br>
+        <p id="student-play">
+            <u>If you're a student playing alone:</u>
+            Think about which answer is correct and choose it.
+        </p><br>
+        <div class="row">
+            <button id="tutorial-next">
+                <img src="img/next.jpg"> Play
+            </button>
+        </div>
+    </div>
+
+    <div id="question-1" class="hidden">
+        <h0>What is the captial of Canada?</h0><br><br>
+        <div class="row">
+            <button id="q1-quebec">
+                <img src="img/quebec.jpg"> Québec
+            </button>
+            <button id="q1-ottawa">
+                <img src="img/ottawa.jpg"> Ottawa
+            </button>
+        </div>
+        <div class="row">
+            <button id="q1-toronto">
+                <img src="img/toronto.jpg"> Toronto
+            </button>
+            <button id="q1-banff">
+                <img src="img/banff.jpg"> Banff
+            </button>
+        </div>
+    </div>
+    <div id="question-2" class="hidden">
+        <h0>How big is Canada in comparison to Germany?</h0><br><br>
+        <div class="row">
+            <button id="q2-five">
+                <img src="img/five.jpg"> about 5x bigger
+            </button>
+            <button id="q2-two">
+                <img src="img/two.jpg"> about 2x bigger
+            </button>
+        </div>
+        <div class="row">
+            <button id="q2-seven">
+                <img src="img/seven.jpg"> about 7x bigger
+            </button>
+            <button id="q1-nine">
+                <img src="img/nine.jpg"> about 9x bigger
+            </button>
+        </div>
+    </div>
+
+    <div id="progress-bar" class="hidden"></div>
+    <span id="time-left" class="hidden">00:00</span>
+
+    <script defer src="app.js"></script>
 </body>
 </html>
