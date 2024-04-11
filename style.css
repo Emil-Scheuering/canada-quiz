@@ -1,7 +1,7 @@
 body{
     background-color: #0f172a;
     color: white;
-    font-family: "Source Sans 3";
+    font-family: "Lato";
     padding: 10%;
 }
 *::selection{background-color: #1e293b;}
@@ -11,7 +11,7 @@ body{
     border-radius: 23px;
     cursor: pointer;
     position: fixed;
-    bottom: 2%;
+    bottom: 3%;
     width: 30px;
     height: 30px;
     transition: .3s;
@@ -26,7 +26,7 @@ body{
     background-color: #2563eb;
     position: fixed;
     left: 11%;
-    bottom: 10%;
+    bottom: 11%;
 
     border: 1px solid transparent;
     border-radius: 5px;
@@ -47,7 +47,7 @@ body{
     font-size: x-large;
     position: fixed;
     left: 11%;
-    bottom: 4%;
+    bottom: 5%;
     opacity: 1;
     visibility: visible;
     transition: .4s;
@@ -93,7 +93,7 @@ div.row button:focus{
 }
 
 div.row button:hover > img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .3s;
 }
 
@@ -117,13 +117,6 @@ p{font-size: x-large;}
 
 #q-description{color: #6b7280;}
 
-#home.hidden,
-#tutorial.hidden,
-#question-1.hidden,
-#question-2.hidden,
-#question-3.hidden,
-#question-4.hidden,
-#question-5.hidden,
-#finished.hidden{
+.page.hidden{
     display: none;
 }
