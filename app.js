@@ -34,7 +34,8 @@ setInterval(()=>{
             if(window.location.hash == "#question-1" ||
                 window.location.hash == "#question-2" ||
                 window.location.hash == "#question-3" ||
-                window.location.hash == "#question-4")
+                window.location.hash == "#question-4" ||
+                window.location.hash == "#question-5")
             {
                 window.location.hash = "#failed";
             }
