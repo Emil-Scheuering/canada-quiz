@@ -8,117 +8,159 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="https://github.com/emil-scheuering/canada-quiz" target="_blank">
         <img class="bottom-button" src="img/github.png" style="right: 20px;" title="Visit Github Repo">
     </a>
 
-    <h2 id="q-description">Let's start</h2>
+    <h2 id="q-description">Loading...</h2>
 
-    <div id="home" class="hidden">
-        <h0>Who are you?</h0><br><br>
+    <div class="page hidden" id="home">
+        <h0>Do you already know how to play?</h0><br><br>
         <div class="row">
-            <button id="home-teacher">
-                <img src="img/class.jpg"> I am a teacher playing with my class
+            <button class="answer-correct">
+                <img src="img/class.jpg"> No, I don't
             </button>
         </div>
         <div class="row">
-            <button id="home-student">
-                <img src="img/student.jpg"> I am a student playing alone
-            </button>
-        </div><br><br>
-        <div class="row">
-            <button id="home-skip">
-                <img src="img/exit.jpg"> Skip tutorial
+            <button class="answer-correct">
+                <img src="img/exit.jpg"> Yes, I do
             </button>
         </div>
     </div>
-    <div id="tutorial" class="hidden">
+    <div class="page hidden" id="tutorial">
         <h0>How to play</h0>
-        <p id="teacher-play">
-            <u>If you're a teacher playing with your class:</u>
+        <p>
+            <u>If you're a teacher playing with your class:</u><br>
             Your class has to vote on which answer to choose.<br>
             If everyone agrees, you have to click on the selected answer.
         </p><br>
-        <p id="student-play">
-            <u>If you're a student playing alone:</u>
+        <p>
+            <u>If you're playing alone:</u><br>
             Think about which answer is correct and choose it.
         </p><br>
         <div class="row">
-            <button id="tutorial-next">
+            <button class="answer-correct">
                 <img src="img/next.jpg"> Play
             </button>
         </div>
     </div>
 
-    <div id="question-1" class="hidden">
+    <div class="page hidden" id="question-1">
         <h0>What is the captial of Canada?</h0><br><br>
         <div class="row">
-            <button id="q1-quebec">
+            <button class="answer-incorrect">
                 <img src="img/quebec.jpg"> Québec
             </button>
-            <button id="q1-ottawa">
+            <button class="answer-correct">
                 <img src="img/ottawa.jpg"> Ottawa
             </button>
         </div>
         <div class="row">
-            <button id="q1-toronto">
+            <button class="answer-incorrect">
                 <img src="img/toronto.jpg"> Toronto
             </button>
-            <button id="q1-banff">
+            <button class="answer-incorrect">
                 <img src="img/banff.jpg"> Banff
             </button>
         </div>
     </div>
-    <div id="question-2" class="hidden">
+    <div class="page hidden" id="question-2">
         <h0>How big is Canada in comparison to Germany?</h0><br><br>
         <div class="row">
-            <button id="q2-five">
-                <img src="img/five.jpg"> about 5x bigger
+            <button class="answer-incorrect">
+                <img src="img/five.jpg"> about 10x bigger
             </button>
-            <button id="q2-two">
-                <img src="img/two.jpg"> about 2x bigger
+            <button class="answer-incorrect">
+                <img src="img/two.jpg"> about 20x bigger
             </button>
         </div>
         <div class="row">
-            <button id="q2-seven">
-                <img src="img/seven.jpg"> about 7x bigger
+            <button class="answer-correct">
+                <img src="img/seven.jpg"> about 30x bigger
             </button>
-            <button id="q1-nine">
-                <img src="img/nine.jpg"> about 9x bigger
+            <button class="answer-incorrect">
+                <img src="img/nine.jpg"> about 40x bigger
             </button>
         </div>
     </div>
 
-    <div id="question-3" class="hidden">
+    <div class="page hidden" id="question-3">
         <h0>How many people live in Canada?</h0><br><br>
         <div class="row">
-            <button id="q3-ten">
+            <button class="answer-incorrect">
                 ~10 million
             </button>
-            <button id="q3-hundred">
+            <button class="answer-incorrect">
                 ~100 million
             </button>
         </div>
         <div class="row">
-            <button id="q3-fifty">
+            <button class="answer-correct">
                 ~50 million
             </button>
-            <button id="q3-eighty">
+            <button class="answer-incorrect">
                 ~80 million
             </button>
         </div>
     </div>
 
-    <div id="finished" class="hidden">
+    <div class="page hidden" id="question-4">
+        <h0>In which sport did Canada win in 2023?</h0><br><br>
+        <div class="row">
+            <button class="answer-incorrect">
+                <img src="img/football.jpg"> Football
+            </button>
+            <button class="answer-incorrect">
+                <img src="img/tennis.jpg"> Tennis
+            </button>
+        </div>
+        <div class="row">
+            <button class="answer-correct">
+                <img src="img/ice-hockey.jpg"> Ice Hockey
+            </button>
+            <button class="answer-incorrect">
+                <img src="img/basketball.jpg"> Basketball
+            </button>
+        </div>
+    </div>
+
+    <div class="page hidden" id="question-5">
+        <h0>1 Canadian dollar is equivalent to..</h0>
+        <div class="row">
+            <button class="answer-correct">
+                <img src="img/euro.jpg"> 0,68 €
+            </button>
+            <button class="answer-incorrect">
+                <img src="img/euro.jpg"> 0,92 €
+            </button>
+        </div>
+        <span style="color: gray;font-size: small;">As of April 12, 2024.</span>
+    </div>
+    
+    <div class="page hidden" id="failed">
+        <h0>Maybe next time?</h0>
+        <p>Too slow. Do you want to try again?</p><br>
+        <div class="row">
+            <button onclick="window.location.hash = '#question-1'">
+                <img src="img/exit.jpg">
+                Play again
+            </button>
+        </div>
+    </div>
+
+    <div class="page hidden" id="finished">
         <h0>Thank you!</h0>
-        <p>You completed the quiz successfully.</p><br>
-        <button id="finish-reload">
-            <img src="img/exit.jpg">
-            Play again
-        </button>
+        <p>You completed the quiz.<br><span id="correct-count">0</span> / 5 were correct.<br><br>
+        <span style="color:gray;font-size: medium;">If you want to, you can fork the project to create your own quiz.<br>Click the small GitHub icon at the bottom of the page to do that.</span></p><br>
+        <div class="row">
+            <button onclick="window.location.hash = '#question-1'">
+                <img src="img/exit.jpg">
+                Play again
+            </button>
+        </div>
     </div>
 
     <div id="progress-bar" class="hidden"></div>
